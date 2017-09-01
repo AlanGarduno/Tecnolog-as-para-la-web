@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio con Canvas</title>
+    </head>
+    <canvas id = "Circulo" width="3150" height="1000">
+            <canvas id="dibujarRectangulo">
+        </canvas>
+        </canvas>
+        <script>
+            var canvas = document.getElementById("dibujarRectangulo");
+            var c = canvas.getContext("2d");
+            c.fillStyle="yellow";
+            c.fillRect(100,100,100,90);
+            c.strokeStyle="blue";
+            c.lineWidth=6;
+            c.strokeRect(100,100,100,100);
+        </script>
+    <script>
+        var can = document.getElementById("Circulo");
+        var c = can.getContext("2d");
+        c.beginPath();
+        c.arc(200,220,200,0,Math.PI*2);
+        c.fillStyle = "green";
+        c.fill();
+    </script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rectángulo con Canvas</title>
+    </head>
+    <body>
+     <canvas id="dibujarRectangulo" width ="300" heiht="100" style="border:1px solid black;">
+        </canvas>
+        <script>
+            var canvas = document.getElementById("dibujarRectangulo");
+            var c = canvas.getContext("2d");
+            c.fillStyle="yellow";
+            c.fillRect(5,10,200,75);
+            c.strokeStyle="royalBlue";
+            c.lineWidth=6;
+            c.strokeRect(4,9,201,76);
+        </script>
+        <!--<canvas id="dibujarArco" width ="315" heiht="100">
+        </canvas>
+        <script>
+            var canvas = document.getElementById("dibujarArco");
+            var c = canvas.getContext("2d");
+            c.beginPAth();
+            c.arc(35,50,30,0,MATH.PI*2);
+            c.fillStyle="mediumslateblue";
+            c.fill();
+        </script> -->
+    </body>
+</html>
+
+<!--
+Un circulo:
+    <canvas id="dibujarArco" width ="315" heiht="100">
+        </canvas>
+        <script>
+            var canvas = document.getElementById("dibujarArco");
+            var c = canvas.getContext("2d");
+            c.beginPAth();
+            c.arc(35,50,30,0,MATH.PI*2);
+            c.fillStyle="mediumslateblue";
+            c.fill();
+        </script>
+
+
+
+
+
+-->
