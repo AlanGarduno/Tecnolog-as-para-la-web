@@ -1,0 +1,13 @@
+p	{ font-size: l.3em;
+	font-family: verdana, arial, sans-serif; }
+span	{ color: red;
+	font-size: .6em;
+	height: 1em; }
+.super	{ position: relative;
+	top: - 1ex; }
+.sub	{ position: relative;
+	bottom: -1ex; }
+.desplizq { position: relative;
+	left: -1ex; }
+.desplder { position: relative;
+	right: -1ex ; }

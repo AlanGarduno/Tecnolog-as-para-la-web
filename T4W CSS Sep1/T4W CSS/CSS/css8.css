@@ -1,0 +1,16 @@
+p	{ background-color: LightSkyBlue;
+	margin-bottom: .5em;
+	font-fam ily: arial, helvetica, sans-serif; }
+
+.uno{
+	width: 20%;
+}
+.dos{
+	width: 80%; 
+	text-align: center;
+}
+.tres{
+	width: 20%; 
+	height: 150px; 
+	overflow: scroll;
+}

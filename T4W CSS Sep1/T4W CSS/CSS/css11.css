@@ -1,0 +1,17 @@
+©media all
+{
+	body	{ background-color: SteelBlue; }
+	h1	{ font-family: verdana, helvetica, sans-serif;
+		color: PaleCreen; }
+	p	{ font-size: 12pt;
+		color: white;
+		font-family: arial, sans-serif; }
+} /* Fin de la declaración ©media all. */
+©media print
+{
+	body	{ background-color: white; }
+	h1	{ color: SeaGreen; }
+	p	{ font-size: 14pt;
+		color: SteelBlue;
+		font-family: "times new roman", times, serif; }
+} /* Fin de la declaración ©mnedia print. */

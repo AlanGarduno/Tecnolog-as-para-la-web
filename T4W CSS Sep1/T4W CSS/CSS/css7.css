@@ -1,0 +1,10 @@
+body	{ background-image: url(logo.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: LightGrey; }
+p	{ font-size: 18pt;
+	color: DarkBlue;
+	text-indent: 1em;
+	font-family: arial, sans-serif; }
+.dark	{ font-weight: bold; }
