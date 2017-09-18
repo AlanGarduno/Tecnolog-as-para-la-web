@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+        <script>
+                s = window.prompt("Ingresa un numero");
+        
+                function f(num){
+                    if(num == 0 || num == 1)
+                        return num;
+                    else{
+                        return f(num-1) + f(num-2);
+                        
+                    }
+                }
+                n = parseInt(s);
+                aux = n;
+                while(aux > 0)
+                {
+                    if(f(aux) == n){
+                    alert("Este numero pertenece a la serie");
+                    break;
+                    }
+                aux--;
+                }
+            </script>        
+</head>
+
+</html>

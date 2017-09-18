@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script>
+    s = window.prompt("ingresa una cadena")
+    
+    function invertir(cadena) {
+    var x = cadena.length;
+    var cadenaInvertida = ""; 
+    while (x>=0) {
+        cadenaInvertida = cadenaInvertida + cadena.charAt(x);
+        x--;
+    }
+    return cadenaInvertida;
+    }
+
+    if(s == invertir(s))
+        alert("Es palindromo");
+    else
+        alert("No es");
+    
+    
+    </script>
+</head>
+
+</html>
