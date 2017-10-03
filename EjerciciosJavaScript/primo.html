@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>N&uacute;mero Primo</title>
+		<script type="text/javascript">
+			var numero;
+			var valor;
+			var NumeroPrimo=true;
+	 
+			numero = window.prompt("Ingresa numero a verificar");
+			valor=parseInt(numero);
+			for(i=2;i<valor;i++){
+				if(valor%i==0){
+					NumeroPrimo=false;
+					break;
+				}
+			}
+			if(NumeroPrimo)
+				document.writeln("<h1>El numero "+valor+" es Primo</h1>");
+			else
+				document.writeln("<h1>El numero "+valor+" NO es Primo</h1>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>	
