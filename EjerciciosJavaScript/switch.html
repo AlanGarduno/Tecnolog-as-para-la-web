@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Switch</title>
+	<script type="text/javascript">
+		var seleccion;
+		var etiquetaInicial;
+		var etiquetaFinal;
+		var entradaValida = true;
+		var tipoLista;
+		selecion = window.prompt("Selecionar un estilo:\n"+"1(decimal),2(letra),3(romano)","1");
+		switch(selecion){
+			case "1": 	
+				etiquetaInicial="<ol>";
+				etiquetaFinal="</ol>";
+				tipoLista="<h1>Lista numerada</h1>";
+				break;
+			case "2":
+				etiquetaInicial="<ol style='list-style-type:upper-alpha'>";
+				etiquetaFinal="</ol>";
+				tipoLista="<h1>Lista con letras</h1>";
+				break;
+			case "3":
+				etiquetaInicial="<ol style='list-style-type:upper-roman'>";
+				etiquetaFinal="</ol>";
+				tipoLista="<h1>Lista con números romanos</h1>";
+				break;
+			default:
+				entradaValida=false;
+				break;
+		}
+		if(entradaValida==true){
+			document.writeln(tipoLista+etiquetaInicial);
+			for (var i = 1; i <= 3; ++i) 
+				document.writeln("<li>Elemnto de lista"+i+"</li>");
+			document.writeln(etiquetaFinal);
+		}else
+			document.writeln("Selecci&oacute;n inv&aacute;lida "+selecion);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
