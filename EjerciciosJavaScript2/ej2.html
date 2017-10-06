@@ -1,0 +1,27 @@
+<html>
+    <head>
+        	<meta charset="UTF-8">
+            <title>Dibujar Cuadro</title>
+    </head>
+    <script>
+        function fun(){
+        var color=document.getElementById("color").value;
+        var tamanio=document.getElementById("tamanio").value;
+        var tam=parseInt(tamanio);         
+		var canvas=document.getElementById("dibujarRectangulo");
+		var c1=canvas.getContext("2d");
+        c1.fillStyle=color;	
+		c1.fillRect(0,0,tam,tam);
+
+        }
+    </script>
+    <form id="form1">
+         <input name="color" id="color" type="text" placeholder="Ingresa el color ">
+         <input name="tamanio" id="tamanio" type="text" placeholder="Ingresa el tamaño">
+         <input type="button" value="Enviar" onclick="fun()">
+    </form>
+    <canvas	id="dibujarRectangulo"	
+    width="600" height="600"
+    style="border: 1px solid black;">
+    </canvas>
+</html>
