@@ -1,0 +1,119 @@
+﻿<html>
+<head>
+	<title>JQuery</title>
+	<script src = "jquery-3.2.1.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	
+    $("#button1").click(function(){
+		$("#enlace").hide();
+		$("img").hide();
+	});
+	$("#button2").click(function(){
+		$("#enlace").show();
+		$("img").show();
+	});
+	//$("#Toggle").click(function(){
+	//		$("#enlace").hide();
+	//		$("img").hide();
+	//		$('#Toggle').html('Show') //Cambia el texto del boton
+	//});
+
+	$('#Toggle').toogle(Show,Hide);
+		function Show() {
+  		$(this).text($(this).attr('Show'));
+		}
+
+		function Hide() {
+  		$(this).text($(this).attr('Hide'));
+		}
+});
+	</script>
+
+
+</head>
+<body>
+	<div >
+	<p>
+		Un parrafo con un <a id="enlace" href="http://www.google.com">enlace</a>.
+	</p>
+	</div>
+	<div>
+		<button id="button1">Hide</button>
+
+		<button id="button2">Show</button>
+
+		<button id="Toggle" onclick="toogle">Hide</button>
+	</div>
+
+	<div>
+			<p>
+				Texto hola
+			</p>
+		
+			<img src="https://i.imgur.com/P8jC0t0.jpg" >
+		
+	</div>
+</body>
+</html>
+
+<!-- Referenciando Jquery :
+	1. Asegurar que se ejecutará hasta que el DOM esté listo
+	2. Asegurar que el código está separado del contenido y la presentacion (HTML vs CSS)
+
+	Selecion de elementos en JQuery:
+	$("div");           -selecciona todos los elementos de div
+	$("#unElemento");    -selecciona un elemento con la id #unElemento
+	$(".unaClase");     -selecciona los elementos con la clase "unaClase"
+	$("p#unElemento");   -Selecciona el párrafo del elemento con el id "unElemento"
+	$("ul li a.navigation") -Selecciona las anclas con las clases "navigation" anidadasen una lista
+
+	Seleccion de elementos en CSS
+	$("p>a");         -selecciona anclas hijo de parrafos
+	$("input[type-text]"); -selecciona entradas predeterminadas
+	$("a:first");          -selecciona la primera ancla
+	$("p:odd");            -selecciona parrafos impares
+	$("li:first-child");   -selecciona cada elemento de la lista que sea el primero
+	$(":animated");        -selecciona elementos animados
+	$(":button");          -selecciona algún botón
+	$(":radio");           -selecciona radio-buttons
+	$(":checkbox");        -selecciona checkboxes
+	$(":checked");         -selecciona checkboxes o radio-buttons seleccionados
+	$(":header");          -selecciona encabezados (h1,h2,...,etc)
+
+	Acceso a nombres de clase
+	$("div").addClass("content");
+	$("div").removeClass("content");
+	$("div").toggleClass("content");
+
+	Por ejemplo:
+	if($("#unElemento").hasClass("content")){
+		//hace algo
+	}
+
+	Mostrar y ocultar elementos
+	1. $("#unElemento").hide("slow", function(){
+			//hacer algo cuando se oculta
+		})
+	2. $("#unElemento").show("fast", function(){
+			//hacer algo cando se muestra
+		})
+	3. $("#unElemento").toggle(1000, function(){
+			//hacer algo cuando un elemento se oculte/muestre
+		})
+
+	Desvanecimientos:
+	1. $("#unElemento").fadeOut("slow", function(){
+		//hacer algo
+		})
+
+	Ejemplo de animacion
+	1. $("#unElemento").animate({
+								opacity: .3,
+								width: "500px",
+								height: "700px",
+							},2000,function(){
+								//hacer algo cuando la animacion termina
+							});
+	-->
